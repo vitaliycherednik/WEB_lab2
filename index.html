@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Чередник, Віталій, Юрійович">
+    <meta name="description" content="Лабораторна робота №2. Мова гіпертекстової розмітки сайту HTML-5. Таблиці. Каскадна таблиця стилів CSS-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Чередник В.Ю., ІВ-92, ЛР-2, Варіант 8</title>
+    <style>
+        table, td, th {
+	       border: 1px solid black;
+           border-collapse: collapse;
+           width: 50%;
+        }
+        
+        td {
+            text-align: center;
+            width: 100px;
+            height: 10px;
+            padding: 15px 0px;
+        }
+        
+        .first_tr td {
+            background-color: #288F8F;
+            color: #0E0E0E;
+        }
+        .first_tr td:hover {
+            background-color: #F77B28;
+            color: #212121;
+        }
+        .second_tr td {
+            background-color: #F5F528;
+            color: #061225;
+        }
+        .second_tr td:hover {
+            background-color: #8B3CDE;
+            color: #FFFFFF;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <table>
+	<tr class="first_tr">
+		<td></td>
+		<td></td>
+        <td colspan="2" rowspan="2">Чередник</td>
+        <td colspan="2">Віталій</td>
+        <td colspan="2" rowspan="2">Юрійович</td>
+	</tr>
+	<tr class="second_tr">
+        <td colspan="2">ІВ-92</td>
+        <td colspan="2">ЛР-2 Варіант 8</td>
+    </tr>
+    <tr class="third_tr">
+        <td colspan="2"></td>
+        <td colspan="6"></td>
+    </tr>
+    </table>
+    <div class="first_square" id="first-square-position"></div>
+    <div class="second_square" id="second-square-position"></div>
+    <div class="first_square" id="first-square-transform"></div>
+    <div class="second_square" id="second-square-transform"></div>    
+</body>
+</html>

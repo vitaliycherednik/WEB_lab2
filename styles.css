@@ -1,0 +1,42 @@
+.first_square {
+    margin: 20px;
+    float: left;
+    border-radius: 15%; 
+    background-color: #f1b685; 
+    height: 150px; 
+    width: 150px; 
+    border: 1px solid black;
+    outline: 1px solid black;
+    outline-offset: -4px;
+}
+
+.second_square {
+    float: left;
+    border-radius: 15%; 
+    background-color: rgba(202,155,154,0.7); 
+    height: 150px; 
+    width: 150px; 
+    border: 1px solid black;
+    outline: 1px solid black;
+    outline-offset: -4px;
+}
+
+#first-square-position {
+    position: relative;
+}
+
+#second-square-position {
+    position: relative;
+    top: 95px;
+    left: -95px;
+}
+
+#first-square-transform {
+   float: left;
+   transform: none;
+}
+
+#second-square-transform {
+    float: left;
+    transform: translate(-62%, 62%);
+}
